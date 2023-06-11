@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.calc{
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.screen{
+    background-color:  #000000;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.screen > div {
+    padding: 10px 20px;
+    text-align: right;
+    font-size: xx-large;
+}
+
+#old {
+    font-size: larger;
+    color: #E0E0E0;
+    height: 32px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+#clr, #del{
+    grid-column: 2 span;
+}
+
+#clr{
+    background-color: #A0A0A0;
+    background-color: red;
+}
+
+#clr:hover{
+    cursor: pointer;
+    background-color: #F44336;
+}
+
+#del{
+    background-color: #A0A0A0;
+}
+
+#del:hover{
+    cursor: pointer;
+    background-color: #D9D9D9;
+}
+
+button{
+    font-family: Helvetica, sans-serif;
+    padding: 20px 32px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.digit{
+    background-color: #313131;
+    color: white;
+}
+
+.digit:hover{
+    cursor: pointer;
+    background-color: #737373;
+}
+
+.operator, #decimal, #equal{
+    background-color: #F69906;
+    color: white;
+}
+
+.operator:hover, #decimal:hover, #equal:hover{
+    cursor: pointer;
+    background-color: #FBC78D;
+}
